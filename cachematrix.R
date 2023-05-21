@@ -34,4 +34,14 @@ cacheSolve <- function(x, ...) {
 }
 
 
+#Try the following to run a sample computation
+myMatrix <- matrix(c(1, 2, 3, 4), nrow = 2)
+myObj <- makeCacheMatrix()
+myObj$set(myMatrix)
+cacheSolve(myObj)
+#Output will be as follows:
+#      [,1] [,2]
+#[1,]   -2  1.5
+#[2,]    1 -0.5
+
 
